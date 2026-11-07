@@ -60,6 +60,10 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 100px;
+  overflow-x: hidden;
+  overflow-x: clip;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 body {
@@ -68,8 +72,13 @@ body {
   color: var(--clr-dark);
   line-height: 1.6;
   overflow-x: hidden;
+  overflow-x: clip;
   -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
 }
+
+img, video, iframe, svg { max-width: 100%; }
+img { height: auto; }
 
 h1, h2, h3, h4 {
   font-family: var(--ff-display);
@@ -109,6 +118,8 @@ button {
   height: 100%;
   z-index: -10;
   pointer-events: none;
+  overflow: hidden;
+  overflow: clip;
 }
 
 .blob {
@@ -268,6 +279,8 @@ button {
   position: relative;
   overflow: hidden;
   gap: 0.75rem;
+  min-height: 48px;
+  min-width: 48px;
 }
 
 .btn-primary {
@@ -347,7 +360,7 @@ button {
 .hero-section {
   padding-top: 10rem;
   padding-bottom: 6rem;
-  min-h: 100dvh;
+  min-height: 100dvh;
   display: flex;
   align-items: center;
   position: relative;
@@ -369,7 +382,9 @@ button {
 .eyebrow-badge {
   display: inline-flex;
   align-items: center;
-  width: max-content;
+  max-width: 100%;
+  text-align: center;
+  justify-content: center;
   background-color: var(--clr-sky-light);
   color: var(--clr-sky-dark);
   padding: 0.4rem 1.1rem;
@@ -398,9 +413,11 @@ button {
 }
 
 .hero-title {
-  font-size: 3.75rem;
+  font-size: clamp(2.25rem, 8vw, 3.75rem);
   letter-spacing: -0.02em;
   color: var(--clr-dark);
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 .highlight-text {
@@ -1305,8 +1322,11 @@ button {
   display: none;
   flex-direction: column;
   justify-content: space-between;
-  width: 1.75rem;
-  height: 1.2rem;
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  min-height: 48px;
+  padding: 14px 12px;
   z-index: 110;
 }
 
@@ -1436,28 +1456,40 @@ button {
   }
 
   /* Structural white-spaces and offsets reset */
+  .container { padding: 0 1.25rem; }
   .hero-section {
     padding-top: 7rem;
     padding-bottom: 4rem;
   }
-  
+
   .hero-grid {
     grid-template-columns: 1fr;
     gap: 3rem;
     text-align: center;
+    min-width: 0;
   }
+  .hero-grid > * { min-width: 0; }
 
   .hero-text-block {
     align-items: center;
+    min-width: 0;
+    width: 100%;
   }
 
   .eyebrow-badge {
     align-self: center;
+    width: auto;
+    max-width: 100%;
+    white-space: normal;
   }
 
   .hero-title {
-    font-size: 2.5rem;
+    font-size: clamp(2rem, 10vw, 2.5rem);
+    line-height: 1.1;
   }
+  .hero-description { font-size: 1rem; }
+  .section-title { font-size: clamp(1.75rem, 7vw, 2.25rem); overflow-wrap: break-word; }
+  .section-subtitle { font-size: 1rem; }
 
   .hero-cta-group {
     flex-direction: column;
@@ -1596,4 +1628,33 @@ button {
   .footer-column.contact-column {
     grid-column: span 1;
   }
+  .floating-fab-container { right: 1rem; bottom: calc(1rem + env(safe-area-inset-bottom)); }
+  .btn-fab { min-height: 48px; }
+  .selector-bubble { min-height: 48px; }
+  .hero-features-indicator { gap: 1rem; }
+  .indicator-icon { width: 2.5rem; height: 2.5rem; }
+}
+
+/* Small phones — single column, full-bleed safe typography */
+@media (max-width: 414px) {
+  .hero-title { font-size: clamp(1.875rem, 9vw, 2.25rem); }
+  .hero-cta-group .btn { font-size: 1rem; padding: 0.9rem 1.25rem; }
+  .nav-bar { padding: 0.75rem 1rem; }
+  .nav-logo { font-size: 1.3rem; }
+  .container { padding: 0 1rem; }
+  .hero-features-indicator { flex-direction: column; align-items: center; gap: 0.75rem; }
+  .bento-card, .visit-card-inner, .testimonial-card, .spotlight-review-card { padding: 1.5rem 1.25rem; }
+  .hours-row { flex-wrap: wrap; }
+}
+
+@media (max-width: 375px) {
+  .hero-visual-block { width: 100%; }
+  .hero-image { max-width: 100%; }
+  .double-bezel-outer { border-radius: 1.75rem; padding: 0.5rem; }
+  .double-bezel-inner { border-radius: 1.4rem; }
+  .footer-links a { display: flex; align-items: center; min-height: 44px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
 }
