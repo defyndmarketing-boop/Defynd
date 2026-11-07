@@ -1,0 +1,12 @@
+node_modules/
+.netlify/
+.firebase/
+.playwright-mcp/
+.claude/
+*.json
+!firebase.json
+!firestore.indexes.json
+!package.json
+!package-lock.json
+!dataconnect/**/*.json
+firebase-debug.log

@@ -1,0 +1,21 @@
+[build]
+  publish = "."
+  functions = "netlify/functions"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[redirects]]
+  from = "/defyndmarketing.co.za/*"
+  to = "/:splat"
+  status = 301
+
+# Old domain -> new canonical (if both domains point here)
+[[redirects]]
+  from = "https://defyndmarketing.co.za/*"
+  to = "https://defynd.co.za/:splat"
+  status = 301
+  force = true

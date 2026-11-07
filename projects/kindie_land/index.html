@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kindie Land is Lenasia's favorite indoor playground for toddlers and young children. Play, learn, socialize, and host stress-free kids' birthday parties in a safe, fun, and accommodating space.">
+  <title>KINDIE LAND | Ultimate Indoor Playground & Party Venue in Lenasia</title>
+  
+  <!-- Preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Decorative Ambient Blobs -->
+  <div class="blob-wrapper" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <!-- FLOATING NAVIGATION BAR -->
+  <header class="nav-container">
+    <nav class="nav-bar">
+      <a href="#" class="nav-logo" aria-label="Kindie Land home">
+        <span class="logo-emoji">🧸</span>
+        <span class="logo-text">KINDIE <span class="accent-color">LAND</span></span>
+      </a>
+      
+      <!-- Desktop Navigation Menu -->
+      <ul class="nav-links">
+        <li><a href="#why-love-us" class="nav-link">Why Parents Love Us</a></li>
+        <li><a href="#testimonials" class="nav-link">Parent Reviews</a></li>
+        <li><a href="#plan-visit" class="nav-link">Hours & Booking</a></li>
+      </ul>
+      
+      <!-- Header CTA -->
+      <div class="nav-cta-wrapper">
+        <a href="tel:0684369364" class="btn btn-nav">
+          <span>Call 068 436 9364</span>
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="bar bar-top"></span>
+        <span class="bar bar-middle"></span>
+        <span class="bar bar-bottom"></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- MOBILE OVERLAY MENU -->
+  <div class="mobile-menu-overlay" aria-hidden="true">
+    <div class="mobile-menu-content">
+      <ul class="mobile-nav-links">
+        <li><a href="#why-love-us" class="mobile-nav-link">Why Parents Love Us</a></li>
+        <li><a href="#testimonials" class="mobile-nav-link">Parent Reviews</a></li>
+        <li><a href="#plan-visit" class="mobile-nav-link">Hours & Booking</a></li>
+      </ul>
+      <div class="mobile-menu-footer">
+        <p class="mobile-menu-phone">📞 068 436 9364</p>
+        <p class="mobile-menu-address">128 Bangalore Drive, Lenasia</p>
+        <a href="tel:0684369364" class="btn btn-primary" style="margin-top: 1.5rem; width: 100%; text-align: center;">
+          <span>Call Now to Confirm</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-text-block">
+          <div class="eyebrow-badge">
+            <span>✨ Lenasia's Favorite Indoor Adventure</span>
+          </div>
+          <h1 class="hero-title">The Ultimate Indoor Adventure for <span class="highlight-text">Tiny Explorers!</span></h1>
+          <p class="hero-description">
+            Designed specifically for toddlers and young children to play, learn, and socialize in an incredibly safe, exceptionally clean, and fully accommodating environment.
+          </p>
+          <div class="hero-cta-group">
+            <a href="#plan-visit" class="btn btn-primary">
+              <span>Plan Your Visit</span>
+              <span class="btn-icon-wrapper">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+              </span>
+            </a>
+            <a href="tel:0684369364" class="btn btn-secondary">
+              <span>Book Private Event</span>
+            </a>
+          </div>
+          
+          <!-- Safe indicators list -->
+          <div class="hero-features-indicator">
+            <div class="indicator-item">
+              <span class="indicator-icon" style="background: hsl(198, 93%, 90%); color: hsl(198, 93%, 45%);">🧸</span>
+              <span class="indicator-text">Safe Play Equipment</span>
+            </div>
+            <div class="indicator-item">
+              <span class="indicator-icon" style="background: hsl(355, 90%, 92%); color: hsl(355, 90%, 55%);">🧼</span>
+              <span class="indicator-text">100% Sanitized Daily</span>
+            </div>
+            <div class="indicator-item">
+              <span class="indicator-icon" style="background: hsl(43, 96%, 88%); color: hsl(43, 90%, 45%);">🧁</span>
+              <span class="indicator-text">Allergy accommodating</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero visual panel with concentric borders -->
+        <div class="hero-visual-block">
+          <div class="double-bezel-outer">
+            <div class="double-bezel-inner">
+              <img src="kindie_hero.png" alt="Kindie Land Indoor Playground colorful play area" class="hero-image">
+              <div class="floating-badge">
+                <svg viewBox="0 0 100 100" class="badge-text-svg">
+                  <path id="circlePath" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="none" />
+                  <text font-family="'Fredoka', sans-serif" font-weight="600" font-size="9" fill="hsl(215, 30%, 15%)">
+                    <textPath href="#circlePath" startOffset="0%">• 100% SAFE & CLEAN • FUN LEARNING • PLAY ADVENTURE </textPath>
+                  </text>
+                </svg>
+                <div class="badge-center-icon">🎒</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY KIDS & PARENTS LOVE US (Bento Grid) -->
+    <section class="features-section" id="why-love-us">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow-badge badge-green">
+            <span>🎉 Why Families Choose Us</span>
+          </div>
+          <h2 class="section-title">Designed with Love for Toddlers & Parents</h2>
+          <p class="section-subtitle">We go the extra mile to provide a welcoming community hub where magic happens every single day.</p>
+        </div>
+
+        <!-- Asymmetrical Bento Grid -->
+        <div class="bento-grid">
+          <!-- Card 1: Toddler-Friendly Fun (Asymmetric Col 8) -->
+          <div class="bento-card col-span-8 card-blue" data-animate="fade-up">
+            <div class="bento-card-content">
+              <div class="card-tag">Ages 1 - 5</div>
+              <h3 class="card-title">Toddler-Friendly Fun</h3>
+              <p class="card-desc">
+                Safety first! Our indoor play structures, ultra-padded soft-climbing tunnels, and pastel ball pits are carefully curated specifically for toddlers to explore, learn, and play without any big-kid bumps or worries.
+              </p>
+              <div class="toddler-visual">
+                <!-- SVG Playground Visual Representation -->
+                <svg viewBox="0 0 200 100" class="playground-svg-visual">
+                  <rect x="10" y="50" width="40" height="40" rx="10" fill="hsl(198, 93%, 80%)" />
+                  <circle cx="30" cy="35" r="12" fill="hsl(43, 96%, 70%)" />
+                  <path d="M 60 90 L 100 90 L 120 50 L 140 90" stroke="hsl(145, 65%, 60%)" stroke-width="8" stroke-linecap="round" fill="none" />
+                  <circle cx="120" cy="40" r="10" fill="hsl(355, 90%, 75%)" />
+                  <circle cx="160" cy="80" r="15" fill="hsl(198, 93%, 65%)" />
+                  <circle cx="168" cy="75" r="5" fill="#fff" opacity="0.6" />
+                  <circle cx="152" cy="85" r="5" fill="#fff" opacity="0.6" />
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Extraordinarily Accommodating (Asymmetric Col 4) -->
+          <div class="bento-card col-span-4 card-yellow" data-animate="fade-up">
+            <div class="bento-card-content">
+              <div class="card-tag">Personal Service</div>
+              <h3 class="card-title">Extraordinarily Accommodating</h3>
+              <p class="card-desc">
+                We know parenting can be busy! That is why we accommodate special dietary restrictions, arrange custom snacks, and offer exclusive family time slots. Just let our friendly team know!
+              </p>
+              <ul class="accommodating-list">
+                <li><span class="check-icon">✓</span> Special dietary adjustments</li>
+                <li><span class="check-icon">✓</span> Exclusive private slot bookings</li>
+                <li><span class="check-icon">✓</span> Dedicated supportive playground helpers</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Card 3: Cafe & Parent Lounge (Asymmetric Col 6) -->
+          <div class="bento-card col-span-6 card-green" data-animate="fade-up">
+            <div class="bento-card-content">
+              <div class="card-tag">For Parents</div>
+              <h3 class="card-title">Cafe & Parent Lounge</h3>
+              <p class="card-desc">
+                Relax with premium coffee, high-speed Wi-Fi, and complete line-of-sight views of the colorful <strong>Caterpillar Club</strong> tactile play zone. Highly clean, cozy, and perfectly relaxing!
+              </p>
+              
+              <!-- Stunning CSS/SVG Diorama representing 'Nano Banana' Aesthetic -->
+              <div class="diorama-wrapper" style="margin-top: 1.5rem; background-color: var(--clr-bg-pure); border-radius: var(--inner-radius); padding: 1.5rem; border: 1px solid var(--clr-green-light); display: flex; justify-content: center; align-items: center; transition: transform var(--transition-slow);">
+                <svg viewBox="0 0 300 160" class="diorama-svg" style="width: 100%; max-width: 250px; height: auto; display: block;" aria-label="Miniature parents cafe diorama">
+                  <!-- Background Play Zone (Caterpillar Club) -->
+                  <g class="caterpillar-zone">
+                    <!-- Colorful caterpillar tunnels -->
+                    <path d="M 20 80 Q 40 40 60 80 T 100 80 T 140 80" stroke="hsl(145, 65%, 60%)" stroke-width="12" fill="none" stroke-linecap="round" opacity="0.85" />
+                    <!-- Caterpillar face -->
+                    <circle cx="140" cy="80" r="10" fill="hsl(145, 65%, 45%)" />
+                    <circle cx="138" cy="77" r="2" fill="#fff" />
+                    <circle cx="142" cy="77" r="2" fill="#fff" />
+                    <path d="M 136 70 Q 140 65 144 70" stroke="hsl(145, 75%, 25%)" stroke-width="1.5" fill="none" />
+                    <!-- Colorful sensory play blocks -->
+                    <rect x="160" y="70" width="15" height="15" rx="3" fill="hsl(198, 93%, 70%)" transform="rotate(15 160 70)" />
+                    <rect x="180" y="65" width="12" height="12" rx="3" fill="hsl(355, 90%, 75%)" transform="rotate(-10 180 65)" />
+                  </g>
+                  
+                  <!-- Ground/Floor shadows -->
+                  <ellipse cx="150" cy="135" rx="140" ry="15" fill="rgba(0,0,0,0.05)" />
+                  
+                  <!-- Miniature Cafe Furniture -->
+                  <!-- Tiny Table -->
+                  <rect x="105" y="115" width="40" height="4" rx="2" fill="hsl(43, 96%, 60%)" />
+                  <line x1="125" y1="119" x2="125" y2="135" stroke="hsl(43, 85%, 40%)" stroke-width="3" />
+                  <ellipse cx="125" cy="135" rx="12" ry="3" fill="hsl(43, 85%, 35%)" />
+                  
+                  <!-- Microscopic Coffee Cups -->
+                  <rect x="112" y="108" width="6" height="7" rx="1.5" fill="hsl(198, 93%, 60%)" />
+                  <path d="M 118 110 A 2 2 0 0 1 118 113" stroke="hsl(198, 93%, 60%)" stroke-width="1.5" fill="none" />
+                  
+                  <rect x="132" y="108" width="6" height="7" rx="1.5" fill="hsl(355, 90%, 65%)" />
+                  <path d="M 138 110 A 2 2 0 0 1 138 113" stroke="hsl(355, 90%, 65%)" stroke-width="1.5" fill="none" />
+                  
+                  <!-- Tiny Chairs with Miniature Parents -->
+                  <!-- Left Chair & Parent (Father) -->
+                  <g class="figure-left">
+                    <line x1="85" y1="120" x2="85" y2="135" stroke="hsl(215, 30%, 30%)" stroke-width="2" />
+                    <line x1="95" y1="120" x2="95" y2="135" stroke="hsl(215, 30%, 30%)" stroke-width="2" />
+                    <rect x="80" y="115" width="20" height="4" rx="1" fill="hsl(215, 30%, 25%)" />
+                    <rect x="80" y="98" width="3" height="18" rx="1" fill="hsl(215, 30%, 25%)" />
+                    <!-- Parent Figure -->
+                    <circle cx="90" cy="85" r="7" fill="hsl(43, 96%, 80%)" /> <!-- Head -->
+                    <path d="M 83 92 Q 90 92 97 92 L 95 115 L 85 115 Z" fill="hsl(198, 93%, 50%)" /> <!-- Body -->
+                    <path d="M 97 96 Q 107 98 112 108" stroke="hsl(43, 96%, 80%)" stroke-width="2.5" stroke-linecap="round" fill="none" /> <!-- Arm holding coffee -->
+                  </g>
+                  
+                  <!-- Right Chair & Parent (Mother) -->
+                  <g class="figure-right">
+                    <line x1="155" y1="120" x2="155" y2="135" stroke="hsl(215, 30%, 30%)" stroke-width="2" />
+                    <line x1="165" y1="120" x2="165" y2="135" stroke="hsl(215, 30%, 30%)" stroke-width="2" />
+                    <rect x="150" y="115" width="20" height="4" rx="1" fill="hsl(215, 30%, 25%)" />
+                    <rect x="167" y="98" width="3" height="18" rx="1" fill="hsl(215, 30%, 25%)" />
+                    <!-- Parent Figure -->
+                    <circle cx="160" cy="85" r="7" fill="hsl(355, 90%, 90%)" /> <!-- Head -->
+                    <path d="M 153 92 Q 160 92 167 92 L 165 115 L 155 115 Z" fill="hsl(355, 90%, 65%)" /> <!-- Body -->
+                    <path d="M 153 96 Q 143 98 132 108" stroke="hsl(355, 90%, 90%)" stroke-width="2.5" stroke-linecap="round" fill="none" /> <!-- Arm holding coffee -->
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: The Perfect Party Venue (Asymmetric Col 6) -->
+          <div class="bento-card col-span-6 card-rose" data-animate="fade-up">
+            <div class="bento-card-content">
+              <div class="card-tag tag-rose">Community Hub</div>
+              <h3 class="card-title">The Perfect Party Venue</h3>
+              <p class="card-desc">
+                Stress-free hosting starts here! KINDIE LAND is the premier neighborhood venue for kids' birthday parties. We provide custom decorations, delicious kids' platters, and complete playground access.
+              </p>
+              <div class="party-cta-wrap" style="margin-top: 1.5rem;">
+                <a href="tel:0684369364" class="btn btn-party" style="width: 100%; text-align: center;">
+                  <span>Call to Reserve Venue</span>
+                </a>
+              </div>
+              <div class="party-visual-vertical" style="margin-top: 2rem; display: flex; justify-content: center;">
+                <svg viewBox="0 0 150 120" class="balloons-svg" style="max-width: 140px;">
+                  <!-- Balloons -->
+                  <g class="balloon-1">
+                    <path d="M 40 50 C 25 20, 65 20, 50 50 C 45 60, 40 60, 45 65 Z" fill="hsl(198, 93%, 70%)" />
+                    <path d="M 45 65 Q 45 85 35 100" fill="none" stroke="hsl(215, 30%, 40%)" stroke-dasharray="3,3" stroke-width="1.5" />
+                  </g>
+                  <g class="balloon-2">
+                    <path d="M 90 40 C 75 10, 115 10, 100 40 C 95 50, 90 50, 95 55 Z" fill="hsl(355, 90%, 75%)" />
+                    <path d="M 95 55 Q 90 75 105 100" fill="none" stroke="hsl(215, 30%, 40%)" stroke-dasharray="3,3" stroke-width="1.5" />
+                  </g>
+                  <!-- Birthday Cupcake/Gift -->
+                  <rect x="55" y="80" width="30" height="20" rx="4" fill="hsl(43, 96%, 70%)" />
+                  <polygon points="52,80 88,80 80,72 60,72" fill="hsl(355, 90%, 80%)" />
+                  <circle cx="70" cy="67" r="4" fill="hsl(145, 65%, 60%)" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="testimonials-section" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow-badge badge-rose">
+            <span>❤️ Happy Parents, Happy Toddlers</span>
+          </div>
+          <h2 class="section-title">What Our Families Are Saying</h2>
+          <p class="section-subtitle">Real feedback from local parents who have experienced the KINDIE LAND difference.</p>
+        </div>
+
+        <!-- Two-Column Testimonials Layout Grid -->
+        <div class="testimonials-grid-layout">
+          
+          <!-- Column 1: Interactive Testimonial Selector Deck -->
+          <div class="testimonials-showcase">
+            <!-- Selection Avatars -->
+            <div class="testimonial-selectors" role="tablist">
+              <button class="selector-bubble active" role="tab" aria-selected="true" aria-controls="testimonial-card" data-index="0">
+                <span class="avatar-initials bg-sky">MT</span>
+                <span class="avatar-info">
+                  <span class="avatar-name">Meesha T.</span>
+                  <span class="avatar-role">Toddler Mom</span>
+                </span>
+              </button>
+              <button class="selector-bubble" role="tab" aria-selected="false" aria-controls="testimonial-card" data-index="1">
+                <span class="avatar-initials bg-rose">TA</span>
+                <span class="avatar-info">
+                  <span class="avatar-name">Tarusha A.</span>
+                  <span class="avatar-role">Lenasia Parent</span>
+                </span>
+              </button>
+              <button class="selector-bubble" role="tab" aria-selected="false" aria-controls="testimonial-card" data-index="2">
+                <span class="avatar-initials bg-green">ZE</span>
+                <span class="avatar-info">
+                  <span class="avatar-name">Zarina Essop</span>
+                  <span class="avatar-role">Local Guide</span>
+                </span>
+              </button>
+            </div>
+
+            <!-- Active Quote Card Enclosure with Double-Bezel -->
+            <div class="double-bezel-outer testimonial-deck-container">
+              <div class="double-bezel-inner testimonial-card" id="testimonial-card">
+                <div class="quote-mark">“</div>
+                <p class="quote-text" id="quote-content">
+                  The owner was extremely accommodating, opening the center especially for us on a day they are usually closed. Amended food according to our dietary restrictions. The toddlers had an amazing time.
+                </p>
+                <div class="quote-author-meta">
+                  <span class="author-stars">⭐⭐⭐⭐⭐</span>
+                  <span class="quote-author-name" id="quote-author">Meesha T.</span>
+                  <span class="quote-author-tag" id="quote-tag">Verified Google Review</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column 2: Spotlight Review Card (Modern Highlighted Card Format) -->
+          <div class="double-bezel-outer spotlight-review-container">
+            <div class="double-bezel-inner spotlight-review-card">
+              <div class="spotlight-header">
+                <div class="spotlight-badge">
+                  <span class="google-logo">
+                    <svg viewBox="0 0 24 24" width="18" height="18" style="display: block;">
+                      <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                      <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                      <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" fill="#FBBC05"/>
+                      <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+                    </svg>
+                  </span>
+                  <span class="badge-label">GOOGLE REVIEW</span>
+                </div>
+                <span class="verified-tag">✓ VERIFIED REVIEW</span>
+              </div>
+              
+              <div class="spotlight-content">
+                <div class="stars-row">⭐⭐⭐⭐⭐</div>
+                <blockquote class="spotlight-quote">
+                  "Activities for kids while parents chill at the coffee shop. Caterpillar Club also provides tactile activities for kids."
+                </blockquote>
+              </div>
+
+              <div class="spotlight-author-info">
+                <div class="author-avatar bg-green">ZE</div>
+                <div class="author-text">
+                  <cite class="author-name">Zarina Essop</cite>
+                  <span class="author-role">Local Guide • Lenasia</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- PLAN YOUR VISIT (Bold Hours & Guidelines) -->
+    <section class="visit-section" id="plan-visit">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow-badge badge-yellow">
+            <span>📅 Smart Planner</span>
+          </div>
+          <h2 class="section-title">Plan the Perfect Playground Day</h2>
+          <p class="section-subtitle">Essential details to make your tiny explorer's next visit as smooth and delightful as possible.</p>
+        </div>
+
+        <div class="visit-grid">
+          <!-- Operating Hours Card -->
+          <div class="visit-card double-bezel-outer card-hours">
+            <div class="visit-card-inner double-bezel-inner">
+              <div class="visit-card-header">
+                <span class="card-icon">⏰</span>
+                <h3>Operating Hours</h3>
+              </div>
+              <div class="hours-row">
+                <span class="day-label">Saturday</span>
+                <span class="time-value">10:00 AM – 5:00 PM</span>
+              </div>
+              <div class="hours-row">
+                <span class="day-label">Sunday</span>
+                <span class="time-value">11:00 AM – 5:00 PM</span>
+              </div>
+              <div class="hours-row weekday-row">
+                <span class="day-label">Monday – Friday</span>
+                <span class="time-value">Private Bookings Only</span>
+              </div>
+              <p class="hours-footer">
+                *Special arrangements can be made for group play dates and community gatherings!
+              </p>
+            </div>
+          </div>
+
+          <!-- Parent Tips Warning Board -->
+          <div class="visit-card double-bezel-outer card-tips">
+            <div class="visit-card-inner double-bezel-inner">
+              <div class="visit-card-header">
+                <span class="card-icon">💡</span>
+                <h3>Important Tip for Parents</h3>
+              </div>
+              <p class="tip-description">
+                <strong>We absolutely love hosting private events!</strong> 
+              </p>
+              <p class="tip-body">
+                To guarantee that our full playground is open for public play on the day you wish to visit, we highly recommend calling ahead of time to confirm our daily playground schedule.
+              </p>
+              <div class="tip-cta-wrapper">
+                <a href="tel:0684369364" class="btn btn-primary btn-call-confirm">
+                  <span>Call to Confirm Availability</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- CONTACT & LOCATION FOOTER -->
+  <footer class="footer-section">
+    <div class="container footer-grid">
+      <!-- Info Column -->
+      <div class="footer-column brand-column">
+        <h2 class="footer-logo">🧸 KINDIE <span class="accent-color">LAND</span></h2>
+        <p class="brand-desc">
+          Lenasia's dedicated safe playground designed with double-padded care, sensory stimulation, and allergy-friendly dining guidelines. Let your toddlers dream and play safely!
+        </p>
+        <p class="footer-copy">&copy; 2026 KINDIE LAND. All rights reserved.</p>
+      </div>
+
+      <!-- Quick Links Column -->
+      <div class="footer-column links-column">
+        <h3>Quick Navigation</h3>
+        <ul class="footer-links">
+          <li><a href="#hero">Back to Top</a></li>
+          <li><a href="#why-love-us">Playground Features</a></li>
+          <li><a href="#testimonials">Parent Experiences</a></li>
+          <li><a href="#plan-visit">Hours & Tips</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Card Column -->
+      <div class="footer-column contact-column">
+        <h3>Contact & Location</h3>
+        <div class="contact-card">
+          <!-- Address -->
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <div class="contact-text">
+              <p class="contact-label">Our Address</p>
+              <p class="contact-value">128 Bangalore Drive Extension 11A, Lenasia, 1827</p>
+              <a href="https://maps.google.com/?q=128+Bangalore+Drive+Extension+11A,+Lenasia,+1827" target="_blank" rel="noopener noreferrer" class="maps-link">
+                <span>Navigate via Google Maps (MR9V+XQ) ↗</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Phone Line -->
+          <div class="contact-item">
+            <span class="contact-icon">📞</span>
+            <div class="contact-text">
+              <p class="contact-label">Booking & Schedule Line</p>
+              <p class="contact-value"><a href="tel:0684369364" class="phone-link">068 436 9364</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MOBILE FLOATING CONTACT ACTION BUTTON (FAB) -->
+  <div class="floating-fab-container">
+    <a href="tel:0684369364" class="btn btn-fab" aria-label="Call Now to Confirm Times">
+      <span class="fab-phone-icon">📞</span>
+      <span class="fab-label-text">Call to Confirm Times</span>
+    </a>
+  </div>
+
+  <!-- Custom JavaScript logic -->
+  <script src="app.js"></script>
+</body>
+</html>
